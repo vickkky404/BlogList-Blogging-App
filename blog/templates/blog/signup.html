@@ -1,0 +1,42 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Create Your Account</h2>
+        <p class="auth-subtitle">Join our community of writers and readers</p>
+        
+        <form method="post">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="username">Full Name</label>
+                <input type="text" class="form-control" id="username" name="uname" 
+                    placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="uemail" 
+                    placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="upassword" 
+                    placeholder="Enter your password" required>
+            </div>
+            
+            <button type="submit" class="btn-auth">Sign Up</button>
+        </form>
+        
+        <div class="auth-footer">
+            Already have an account? <a href="{% url 'login-page' %}">Log in here</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
