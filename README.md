@@ -14,7 +14,7 @@ A modern, minimal, and aesthetic Django-based blogging platform where users can 
 - **Dashboard Analytics** - View total posts and active users
 - **Responsive Design** - Works perfectly on all devices
 - **Dark Mode Support** - Automatic dark mode based on system preference
-- **Professional UI** - Minimal and aesthetic design
+- **Professional UI** - Minimal and aesthetic design.....
 
 ## 🛠️ Tech Stack
 
